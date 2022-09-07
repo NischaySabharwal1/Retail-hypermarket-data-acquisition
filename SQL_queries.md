@@ -5,12 +5,12 @@
 
 ## • Time period for which data is given
 
-/*
+
 SELECT MIN(order_purchase_timestamp) as First_order_date,
        MAX(order_delivered_customer_date) as Last_delivery_date,
        ROUND(DATETIME_DIFF(MAX(order_delivered_customer_date),MIN(order_purchase_timestamp),HOUR)/(24*30),0) AS Time_period_months
 FROM `***.orders` 
-*/
+
 
 ## • Cities and States covered in the dataset
 
